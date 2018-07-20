@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-    <title>Primera</title>
+    <title>Colores</title>
   </head>
   <body>
+       <h1><center>Colores según su predominancia en las ilustraciones</center></h1>
+         
   <!--Bibliotecas P5.JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
@@ -14,10 +16,25 @@
   function setup(){
     var w = windowWidth-10, h = 380;
     var canvas = createCanvas(w,h);
+      noStroke();
+      smooth ();
   }
   function draw(){
-    background(225);
+    background(200);
+      
+      fill(0,0,255);
+      ellipse(460,170,100,100);
+      
+      fill(255,255,0);
+      ellipse(550,170,50,50);
+      
+      fill(0,255,0);
+      ellipse(600,170,16,16);
+      
+      fill(0,255,255);
+      ellipse(mouseX,mouseY,16,16)
   }    
   </script>
+      
   </body>
 </html>
